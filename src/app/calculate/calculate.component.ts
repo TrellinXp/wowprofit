@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-calculate',
+  templateUrl: './calculate.component.html',
+  styleUrls: ['./calculate.component.scss']
 })
-export class AppComponent {
+export class CalculateComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   title = 'wowprofit';
   value1 = 4.66;
   value2 = 0.05;
@@ -35,4 +41,5 @@ export class AppComponent {
     var pricePerPotion = 2 * deathBlossomCost + runeetchedVialCost;
     return  parseFloat(pricePerPotion.toFixed(2)); ;
   }
+
 }

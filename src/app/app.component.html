@@ -1,46 +1,8 @@
 <h1>WoW Profit</h1>
 
-<select>
-  <option>Spiritual Healing Potion</option>
-</select>
-
-  <div class="value">
-    Death Blossom (2) <input type="text" [value]="value1"> g
-  </div>
-  <div class="value">
-    Rune Etched Vial <input type="text" [value]="value2"> g
-  </div>
-
-  <div class="value">
-    Sale Value <input type="text"  [value]="saleValue" > g
-  </div>
-
-  <div class="value">
-    Number of Sales <input type="text"  [value]="numberOfSales" > g
-  </div>
-
-  <div class="value">
-    <button (click)="calculate()">Calculate</button>
-  </div>
-
-  <div class="value">
-    <b>Total Cost Per Potion</b> <input type="text" [value]="totalCostPerPotion"> g Checked
-  </div>
-
-  <div class="value">
-    <b>Total Cost</b> <input type="text" [value]="totalCost"> g Checked
-  </div>
-
-  <div class="value">
-    Auction House Fee Per Potion <input type="text" [value]="auctionHouseFeeRounded"> g
-  </div>
-
-  <div class="value">
-    <b>Profit per Potion</b> <input type="text" [value]="profitPerPotionRounded"> g
-  </div>
-
-  <div class="value">
-    <b>Total Profit</b> <input type="text" [value]="totalProfit"> g
-  </div>
+<ul>
+  <li><a routerLink="calculate">Calculate Profit</a></li>
+  <li><a routerLink="salehistory">Sale History</a></li>
+</ul>
 
 <router-outlet></router-outlet>

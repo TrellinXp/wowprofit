@@ -1,0 +1,51 @@
+<h2>Calculate Profit</h2>
+
+<select class="select">
+    <option>Spiritual Healing Potion</option>
+    <option>Spiritual Mana Potion</option>
+</select>
+  
+
+<div class="costs">
+    <div class="values">
+      <div class="text">Death Blossom (x2)</div> 
+      <div class="textfield"><input type="text" [value]="value1"></div>
+    </div>
+    <div class="values">
+      <div class="text">Rune Etched Vial</div> 
+      <div class="textfield"><input type="text" [value]="value2"></div>
+    </div>
+    <div class="values">
+      <div class="text">Sale Value</div> 
+      <div class="textfield"><input type="text"  [value]="saleValue"></div>
+    </div>
+    <div class="values">
+      <div class="text">Number of Sales</div> 
+      <div class="textfield"> <input type="text"  [value]="numberOfSales"></div>
+    </div>
+  </div>
+
+  <div class="button">
+    <button (click)="calculate()">Calculate</button>
+  </div>
+
+  <div class="values">
+    <div class="text">Total Cost Per Potion</div> 
+    <div class="textfield"><input type="text" [value]="totalCostPerPotion"></div>
+  </div>
+  <div class="values">
+    <div class="text">Total Cost</div> 
+    <div class="textfield"><input type="text" [value]="totalCostRounded"></div>
+  </div>
+  <div class="values">
+    <div class="text">Auction House Fee Per Potion</div> 
+    <div class="textfield"><input type="text" [value]="auctionHouseFeeRounded"></div>
+  </div>
+  <div class="values">
+    <div class="text">Profit per Potion</div> 
+    <div class="textfield"> <input type="text" [value]="profitPerPotionRounded"></div>
+  </div>
+  <div class="values">
+    <div class="text">Total Profit</div> 
+    <div class="textfield"> <input type="text" [value]="totalProfit"></div>
+  </div>
